@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="SReview"
+            type="com.example.coolingyenews.bean.SReview" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/iv_user_avatar"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="20dp"
+            imageUrl="@{SReview.getIcon}"
+            tools:src="@drawable/ic_me"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_review_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="@{SReview.getUname}"
+            app:layout_constraintLeft_toRightOf="@+id/iv_user_avatar"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="username" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_review_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:text="@{SReview.getTimes}"
+            app:layout_constraintTop_toBottomOf="@+id/tv_review_user_name"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_review_user_name"
+            tools:text="18分钟前" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_user_review"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:text="@{SReview.getContent}"
+            app:layout_constraintTop_toBottomOf="@+id/tv_review_time"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_review_time"
+            tools:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_like"-->
+<!--            android:layout_height="18dp"-->
+<!--            android:layout_width="18dp"-->
+<!--            tools:src="@drawable/icon_like"-->
+<!--            imageLocalInt="@{SReview.getLikes_img}"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/tv_user_review"-->
+<!--            app:layout_constraintLeft_toLeftOf="@+id/tv_user_review" />-->
+
+<!--        <com.google.android.material.textview.MaterialTextView-->
+<!--            android:id="@+id/tv_like"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="4dp"-->
+<!--            android:textSize="10sp"-->
+<!--            android:text="@{String.valueOf(SReview.getLikes_count)}"-->
+<!--            tools:text="999"-->
+<!--            app:layout_constraintLeft_toRightOf="@+id/iv_like"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/iv_like"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/iv_like"/>-->
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_height="16dp"
+            android:layout_width="16dp"
+            android:src="@drawable/icon_more"
+            android:layout_marginLeft="300dp"
+            android:layout_marginRight="@dimen/dp_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_review"/>
+        <View
+            android:id="@+id/user_view2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#FAFAFA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_more" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

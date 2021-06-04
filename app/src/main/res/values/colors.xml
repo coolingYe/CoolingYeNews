@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#53A4FC</color>
+    <color name="purple_700">#ffffff</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">@color/purple_500</color>
+    <color name="colorPrimaryVariant">@color/purple_700</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- toolbar背景色 -->
+    <color name="nav_bg">#008577</color>
+    <!-- toolbar标题颜色 -->
+    <color name="nav_text_color">#ffffff</color>
+    <!-- toolbar的menu文本颜色 -->
+    <color name="nav_menu_text_color">#3090d9</color>
+    <!-- toolbar的popup背景色 -->
+    <color name="nav_popup_bg_color">#ffffff</color>
+    <!-- toolbar的popup文本颜色 -->
+    <color name="nav_popup_text_color">#818181</color>
+
+    <color name="theme_color_green">#00B65F</color>
+
+    <color name="user_color_login_bg">#ff9f9c96</color>
+    <color name="user_color_login_bg2">#4d9e7b</color>
+    <color name="user_color_login_bg3">#d4d3d0</color>
+
+    <color name="translucent">#aa000000</color>
+    <color name="white_translucent">#55FFFFFF</color>
+    <color name="black_translucent">#55000000</color>
+    <color name="grey_view">#f6f6f6</color>
+    <color name="gold_text">#a98273</color>
+    <color name="black_text">#282828</color>
+    <color name="brown_text">#5a4640</color>
+    <color name="transparent">#00000000</color>
+    <color name="news_resource">#a98273</color>
+    <color name="text_grey">#919191</color>
+    <color name="grey_bg">#f6f7f8</color>
+    <color name="color_D33D3C">#D33D3C</color>
+    <color name="mews_type_top">#3091D8</color>
+    <color name="color_BDBDBD">#BDBDBD</color>
+    <color name="color_F3F5F4">#F3F5F4</color>
+    <color name="color_515051">#515051</color>
+    <color name="color_F2F4F3">#F2F4F3</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_e8e8e8">#e8e8e8</color>
+    <color name="color_d43d3d">#d43d3d</color>
+    <color name="color_1a1b1d">#1a1b1d</color>
+    <color name="color_b11919">#b11919</color>
+    <color name="color_F96B6B">#F96B6B</color>
+    <color name="color_3091D8">#3091D8</color>
+    <color name="color_d8d8d8">#d8d8d8</color>
+    <color name="color_f4f5f6">#f4f5f6</color>
+    <color name="color_406599">#406599</color>
+    <color name="color_cacaca">#cacaca</color>
+    <color name="color_505050">#505050</color>
+    <color name="color_C1C1C1">#C1C1C1</color>
+    <color name="color_f85959">#f85959</color>
+    <color name="color_D5E8F6">#D5E8F6</color>
+    <color name="color_4592C6">#4592C6</color>
+    <color name="color_1affffff">#1affffff</color>
+    <color name="color_E6E8E7">#E6E8E7</color>
+
+    <color name="common_color_small_text">#9d9f9f</color>
+    <color name="common_color_bar">#fafafa</color>
+    <color name="common_small_text1">#888888</color>
+    <color name="common_color_blue">#5790da</color>
+    <color name="common_color_text_gray">#656565</color>
+    <color name="common_colorWhite">#FFFFFF</color>
+    <color name="common_colorBlacklight">#363636</color>
+</resources>

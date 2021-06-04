@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppThemeLightNoActionBar" parent="Theme.CoolingYeNews">
+        <!-- Customize your theme here. -->
+                <item name="colorPrimaryVariant">@color/black</item>
+        <!--状态栏背景颜色接近于白色时设置-->
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+<!--                <item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+
+    <style name="Theme.CoolingYeNews.White" parent="Theme.CoolingYeNews">
+<!--        <item name="colorPrimary">@color/white</item>-->
+<!--        <item name="colorPrimaryVariant">@color/white</item>-->
+        <!--状态栏背景颜色接近于白色时设置-->
+                <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.colorPrimary.White" parent="Theme.CoolingYeNews.White">
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="NoTitle" parent="Theme.CoolingYeNews">
+        <item name="colorPrimaryVariant">@color/white</item>
+        <!--状态栏背景颜色接近于白色时设置-->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

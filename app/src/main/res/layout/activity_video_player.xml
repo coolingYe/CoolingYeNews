@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="blurred"
+            type="String" />
+        <variable
+            name="Video"
+            type="com.example.coolingyenews.bean.Video" />
+        <variable
+            name="imageInt"
+            type="int" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        imageBgUrl="@{blurred}">
+
+        <View
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+            <com.example.coolingyenews.widget.video.view.CoverVideoPlayerView
+                android:id="@+id/cv_video_view"
+                android:layout_width="match_parent"
+                android:layout_height="220dp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:background="@drawable/tools_player_bg">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_video_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@{Video.getTitle}"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="枪响之后没有赢家，带你身临其境体验战争" />
+
+                <TextView
+                    android:id="@+id/tv_category"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/common_color_small_text"
+                    android:text="@{Video.getDescription}"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_video_title"
+                    app:layout_constraintStart_toStartOf="@+id/tv_video_title"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_video_title"
+                    tools:text="#动画" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:textColor="@color/common_color_small_text"
+                    android:textSize="13sp"
+                    android:text="@{Video.getVideo_description}"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_video_title"
+                    app:layout_constraintStart_toStartOf="@+id/tv_video_title"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_category"
+                    tools:text="「儿菜的三种吃法」我家的儿菜做法，儿菜的三个部分，儿菜叶、儿菜崽子、菜头的三个做法，炝炒、清炒、连锅汤，我挺喜欢这样吃的，分享给你们，愿有那么一点点小小的帮助，加油！" />
+
+
+
+                <ImageView
+                    android:id="@+id/iv_author"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    imageCircleUrl="@{Video.getAuthorUrl}"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_video_title"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_description"
+                    tools:background="@drawable/common_tools_iv_bg" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="@+id/iv_author"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_video_title"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_author"
+                    app:layout_constraintStart_toEndOf="@+id/iv_author">
+
+                    <TextView
+                        android:id="@+id/tv_nike_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="@{Video.getNickName}"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="The Cgbros" />
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_author_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/common_color_small_text"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="@{Video.getUserDescription}"
+                        android:textStyle="bold"
+                        tools:text="凯拉特  /  #影视" />
+                </LinearLayout>
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/review_item_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="LinearLayoutManager"
+                    tools:listitem="@layout/fragment_review_item"
+                    imageBgUrl="@{blurred}"
+                    android:layout_weight="1"/>
+        <LinearLayout
+            android:id="@+id/lin_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:gravity="center">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mt_discuss"
+                    android:layout_width="150dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:gravity="center"
+                    android:background="@drawable/shape_seacher_bg"
+                    android:text="不吐不快"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/iv_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:src="@drawable/icon_like"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tv_like_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="@{String.valueOf(Video.getLikes_count)}"
+                        android:textSize="13dp"
+                        tools:text="0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:id="@+id/iv_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        imageLocalInt="@{imageInt}"
+                        tools:src="@drawable/icon_news_save"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:id="@+id/tv_save_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:textSize="13dp"
+                        android:text="@{String.valueOf(Video.getSave_count)}"
+                        tools:text="0"/>
+                </LinearLayout>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tv_review_count"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/icon_chat"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:text="@{Video.getReview_count}"
+                    tools:text="0"/>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/mt_share"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/icon_share"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    tools:text="0"/>
+            </LinearLayout>
+    </LinearLayout>
+
+</layout>

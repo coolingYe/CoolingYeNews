@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">CoolingYeNews</string>
+    <string name="title_home">新闻</string>
+    <string name="title_video">视频</string>
+    <string name="title_my">我的</string>
+    <string name="item_about_author">关于作者</string>
+
+    <string name="title_activity_collect">我的收藏</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="title_activity_message">消息</string>
+    <string name="title_activity_settings_users">个人信息</string>
+    <string name="title_activity_user_safety">修改密码</string>
+    <string name="title_activity_weather">天气</string>
+    <string name="title_activity_history">历史记录</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="speech_text_1">共有</string>
+    <string name="speech_text_2">条回复-></string>
+    <string name="base_name">library-base</string>
+    <string name="base_no_more_data">"没有更多了"</string>
+    <string name="base_empty_tips_null">暂无数据</string>
+    <string name="base_empty_tips_netword">请检查你的网络连接</string>
+    <string name="base_empty_tips_btn">重试</string>
+    <string name="base_activity_empty">Activity(empty)</string>
+    <string name="base_activity_placeholder">Activity(placeholder)</string>
+    <string name="base_activity_with_convertor">Activity with Convertor</string>
+    <string name="base_single_fragment_custom">single Fragment(custom)</string>
+    <string name="base_multiple_fragment">multiple Fragment</string>
+    <string name="base_multiple_fragment_viewpager">multiple Fragment+ViewPager</string>
+    <string name="base_view_timeout">View(timeout)</string>
+    <string name="base_animat_callback">Animat Callback</string>
+    <string name="base_keep_title_bar_in_fragment">keep title bar in Fragment</string>
+    <string name="base_loadsir">LoadSir</string>
+    <string name="base_success">Success</string>
+    <string name="base_keep_title_bar">keep title bar</string>
+    <string name="base_fine_no_data">fine, no data.</string>
+    <string name="base_click_me_to_retry">click me to retry!</string>
+    <string name="base_best_practices">best practices</string>
+    <string name="base_default_loadsir_callback">default LoadSir Callback</string>
+    <string name="base_keep_title_bar_in_activity">keep title bar in Activity</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

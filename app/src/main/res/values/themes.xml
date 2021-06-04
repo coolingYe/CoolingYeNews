@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CoolingYeNews" parent="Theme.MaterialComponents.Light.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+<!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light">-->
+<!--        <item name="colorPrimary">#212121</item>-->
+<!--        <item name="colorPrimaryVariant">#000000</item>-->
+<!--        <item name="colorOnPrimary">#FFFFFF</item>-->
+<!--        <item name="colorSecondary">#2962FF</item>-->
+<!--        <item name="colorSecondaryVariant">#0039CB</item>-->
+<!--        <item name="colorOnSecondary">#FFFFFF</item>-->
+<!--        <item name="colorError">#F44336</item>-->
+<!--        <item name="colorOnError">#FFFFFF</item>-->
+<!--        <item name="colorSurface">#FFFFFF</item>-->
+<!--        <item name="colorOnSurface">#212121</item>-->
+<!--        <item name="colorOnBackground">#212121</item>-->
+<!--    </style>-->
+
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- toolbar的menu（非popup样式）的颜色和大小值设置 -->
+    <style name="nav_toolbar_menu_style">
+        <item name="android:actionMenuTextColor">@color/nav_menu_text_color</item>
+        <item name="android:textSize">@dimen/nav_menu_text_size</item>
+    </style>
+
+    <!-- toolbar标题的颜色和大小值设置 -->
+    <style name="nav_toolbar_title_style">
+        <item name="android:textColor">@color/nav_text_color</item>
+        <item name="android:textSize">@dimen/nav_title_text_size</item>
+    </style>
+
+
+    <style name="Theme.CoolingYeNews.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.CoolingYeNews.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="dialog" parent="Theme.CoolingYeNews">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!--阴影  -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/BottomShowAnimation</item>
+        <!--弹窗背景是否变暗-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!-- dialog从ios效果动画 -->
+    <style name="BottomShowAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/enter_bottom_menu</item>
+        <item name="android:windowExitAnimation">@anim/exit_bottom_menu</item>
+    </style>
+
+    <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/tranlate_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/tranlate_dialog_out</item>
+    </style>
+</resources>

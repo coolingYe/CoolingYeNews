@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="mlpb_inner_radius" format="dimension"/>
+        <attr name="mlpb_background_color" format="color"/>
+        <attr name="mlpb_progress_color" format="color"/>
+        <attr name="mlpb_progress_stoke_width" format="dimension"/>
+        <attr name="mlpb_show_arrow" format="boolean"/>
+        <attr name="mlpb_enable_circle_background" format="boolean"/>
+        <attr name="mlpb_arrow_width" format="dimension"/>
+        <attr name="mlpb_arrow_height" format="dimension"/>
+
+        <attr name="mlpb_progress" format="integer"/>
+        <attr name="mlpb_max" format="integer"/>
+
+
+        <attr name="mlpb_progress_text_size" format="dimension"/>
+        <attr name="mlpb_progress_text_color" format="color"/>
+
+        <!--<attr name="mlpb_progress_text_offset" format="dimension"/>-->
+
+        <attr name="mlpb_progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="XEditText">
+        <attr name="x_separator" format="string"/>
+        <attr name="x_disableClear" format="boolean"/>
+        <attr name="x_clearDrawable" format="reference"/>
+        <attr name="x_showPwdDrawable" format="reference"/>
+        <attr name="x_hidePwdDrawable" format="reference"/>
+        <attr name="x_disableEmoji" format="boolean"/>
+        <attr name="x_disableTogglePwdDrawable" format="boolean"/>
+    </declare-styleable>
+
+   <declare-styleable name="ItemView">
+    <attr name="left_icon" format="integer"/>//设置左侧图标
+    <attr name="show_left_icon" format="boolean"/>//是否显示左侧图标
+    <attr name="left_text" format="string"/>//左侧标题文字
+    <attr name="right_text" format="string"/>//右侧描述文字
+    <attr name="show_right_arrow" format="boolean"/>//是否显示右侧小箭头
+    <attr name="show_bottom_line" format="boolean"/>//是否显示下划线
+    </declare-styleable>
+
+    <declare-styleable name="ImageTextView">
+        <attr name="Top_icon" format="integer"/>//设置上侧图标
+        <attr name="Bottom_text" format="string"/>//下侧文字
+    </declare-styleable>
+
+</resources>

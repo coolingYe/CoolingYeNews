@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/nav_back"
+            app:contentInsetStart="0dp"
+            android:background="@color/white"
+            app:titleTextColor="@color/black"
+            app:contentInsetStartWithNavigation="0dp"
+            app:titleTextAppearance="@style/nav_toolbar_title_style"
+            app:theme="@style/nav_toolbar_menu_style"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_author_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="17sp"
+            tools:text="asdasd" />
+
+    </LinearLayout>
+</layout>

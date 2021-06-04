@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <data>
+
+        </data>
+
+        <RelativeLayout
+            android:id="@+id/llt_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:foreground="?android:attr/selectableItemBackground">
+
+                <RelativeLayout
+                    android:id="@+id/r_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp">
+
+                        <ImageView
+                            android:id="@+id/iv_icon_"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="5dp"
+                            android:layout_centerVertical="true"
+                            tools:src="@drawable/icon_enter" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_left_title"
+                            android:layout_marginLeft="40dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            tools:text="昵称"
+                            android:layout_centerVertical="true"
+                            android:textColor="#515151" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tv_right_desc"
+                            android:layout_marginRight="30dp"
+                            android:layout_alignRight="@id/iv_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            tools:text="CoolingYe"
+                            android:layout_centerVertical="true"
+                            android:textColor="#515151" />
+
+                        <ImageView
+                            android:id="@+id/iv_right"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:padding="5dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/icon_enter"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/r_1">
+
+                        <View
+                            android:id="@+id/v_bottom_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="42dp"
+                            android:background="#FAFAFA" />
+                </RelativeLayout>
+
+        </RelativeLayout>
+</layout>
